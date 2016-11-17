@@ -1,0 +1,68 @@
+//---------------------------------------------------------------------------
+
+#ifndef Unit1H
+#define Unit1H
+//---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+#include <FMX.Controls.hpp>
+#include <FMX.Forms.hpp>
+#include <FMX.Controls.Presentation.hpp>
+#include <FMX.Edit.hpp>
+#include <FMX.Layouts.hpp>
+#include <FMX.Memo.hpp>
+#include <FMX.ScrollBox.hpp>
+#include <FMX.StdCtrls.hpp>
+#include <FMX.Types.hpp>
+#include <IdBaseComponent.hpp>
+#include <IdComponent.hpp>
+#include <IdCookieManager.hpp>
+#include <IdHTTP.hpp>
+#include <IdIOHandler.hpp>
+#include <IdIOHandlerSocket.hpp>
+#include <IdIOHandlerStack.hpp>
+#include <IdSSL.hpp>
+#include <IdSSLOpenSSL.hpp>
+#include <IdTCPClient.hpp>
+#include <IdTCPConnection.hpp>
+#include <FMX.ExtCtrls.hpp>
+#include <FMX.Objects.hpp>
+#include <FMX.Menus.hpp>
+#include <Data.Bind.Components.hpp>
+#include <Data.Bind.EngExt.hpp>
+#include <Fmx.Bind.DBEngExt.hpp>
+//---------------------------------------------------------------------------
+class TForm1 : public TForm
+{
+__published:	// IDE-managed Components
+	TScaledLayout *ScaledLayout1;
+	TLabel *Label1;
+	TLabel *Label2;
+	TLabel *Label3;
+	TEdit *Edit1;
+	TEdit *Edit2;
+	TEdit *Edit3;
+	TButton *Button1;
+	TMemo *Memo1;
+	TIdHTTP *IdHTTP1;
+	TImage *Image1;
+	TLabel *Label4;
+	TLabel *Label5;
+	TButton *Button2;
+	TTimer *Timer1;
+	TIdSSLIOHandlerSocketOpenSSL *IdSSLIOHandlerSocketOpenSSL1;
+	TAniIndicator *AniIndicator1;
+	TLabel *Label6;
+	TBindingsList *BindingsList1;
+	void __fastcall Button1Click(TObject *Sender);
+	void __fastcall Image1Click(TObject *Sender);
+	void __fastcall FormCreate(TObject *Sender);
+	void __fastcall Button2Click(TObject *Sender);
+	void __fastcall Timer1Timer(TObject *Sender);
+private:	// User declarations
+public:		// User declarations
+	__fastcall TForm1(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TForm1 *Form1;
+//---------------------------------------------------------------------------
+#endif
